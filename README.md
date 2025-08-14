@@ -46,18 +46,5 @@ Estrutura de Arquivos
 ├── index.html       # Estrutura do jogo (HTML)
 ├── style.css        # Estilos do jogo (CSS)
 └── script.js        # Lógica do jogo (JavaScript)
-Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para reportar bugs ou sugerir melhorias. Se desejar adicionar novas funcionalidades ou otimizar o código, crie um pull request.
 
-Faça um fork do projeto.
 
-Crie uma nova branch (git checkout -b feature/nova-funcionalidade).
-
-Faça as alterações e commite (git commit -m 'Adiciona nova funcionalidade').
-
-Envie para a branch (git push origin feature/nova-funcionalidade).
-
-Abra um pull request.
-
-Licença
-Este projeto está sob a licença MIT.
