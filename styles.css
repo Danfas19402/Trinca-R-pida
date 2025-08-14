@@ -1,0 +1,137 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:#f0f2f5;
+    color: #333;
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Estilos do placar */
+.scores {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.score-box {
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+.player1-color {
+    background-color: #2196F3;
+}
+
+.player2-color {
+    background-color: #FF5722;
+}
+
+/* Mensagem de status */
+.status-message {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    min-height: 24px;
+}
+
+/* Estilos do tabuleiro */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cell:hover {
+    background-color: #e9e9e9;
+}
+
+.cell.player1-piece {
+    color: #2196F3;
+    animation: fadeIn 0.5s ease;
+}
+
+.cell.player2-piece {
+    color: #FF5722;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Animação para as peças */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilos dos controles */
+.controls {
+    margin-top: 20px;
+}
+
+#restart-button {
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #FF9800;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#restart-button:hover {
+    background-color: #FB8C00;
+    transform: scale(1.05);
+}
+
+#restart-button:active {
+    transform: scale(1);
+}
